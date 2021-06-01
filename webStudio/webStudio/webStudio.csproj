@@ -67,10 +67,91 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Combo.aspx" />
+    <Content Include="css\StyleBridal.css" />
+    <Content Include="css\StyleHome.css" />
+    <Content Include="css\StyleHotline.css" />
+    <Content Include="css\Stylelogin.css" />
+    <Content Include="Dresses.aspx" />
+    <Content Include="image\anh.jpg" />
+    <Content Include="image\aodai.jpg" />
+    <Content Include="image\diudang.jpg" />
+    <Content Include="image\item3.jpg" />
+    <Content Include="image\item33.jpg" />
+    <Content Include="image\left.jpg" />
+    <Content Include="image\logo.png" />
+    <Content Include="image\quyphai.jpg" />
+    <Content Include="image\right.jpg" />
+    <Content Include="image\rsz_logo.png" />
+    <Content Include="image\sangtrong.jpg" />
+    <Content Include="image\slice.png" />
+    <Content Include="image\thomong.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="MakeupBridal.aspx" />
+    <Content Include="MakeupParty.aspx" />
+    <Content Include="Photo.aspx" />
+    <Content Include="registration.aspx" />
     <Content Include="Web.config" />
+    <Content Include="home.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Combo.aspx.cs">
+      <DependentUpon>Combo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Combo.aspx.designer.cs">
+      <DependentUpon>Combo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dresses.aspx.cs">
+      <DependentUpon>Dresses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dresses.aspx.designer.cs">
+      <DependentUpon>Dresses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MakeupBridal.aspx.cs">
+      <DependentUpon>MakeupBridal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakeupBridal.aspx.designer.cs">
+      <DependentUpon>MakeupBridal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MakeupParty.aspx.cs">
+      <DependentUpon>MakeupParty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakeupParty.aspx.designer.cs">
+      <DependentUpon>MakeupParty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Photo.aspx.cs">
+      <DependentUpon>Photo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Photo.aspx.designer.cs">
+      <DependentUpon>Photo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="registration.aspx.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registration.aspx.designer.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -80,6 +161,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="scrip\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

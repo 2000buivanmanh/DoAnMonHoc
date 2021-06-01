@@ -1,0 +1,339 @@
+﻿body {
+    background-color: #fff;
+    color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #696969;
+}
+
+    a:hover, a:hover p {
+        color: #adad90;
+    }
+
+p {
+    color: #464444;
+    font-size: 18px;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+header {
+    z-index:50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 15px 0px;
+    transition: all 0.5s ease-in-out;
+}
+.sticky{
+    background-color: #fff;
+    opacity: 0.9;
+    padding: 2px 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.sticky #mainmenu a{
+    color: #000;
+}
+/*menu*/
+
+.innerheader {
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul#mainmenu {
+    display: flex;
+}
+
+ul#mainmenu a {
+    display:block;
+    color:#fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.innerheader img {
+    width: 100px;
+    height: 60px;
+   
+}
+
+innerheader img:hover {
+    opacity: 0;
+}
+/*SLICE*/
+#slice {
+    z-index:30;
+    height: 800px;
+    width: 100%;
+    background-image: url("../image/slice.png");
+    background-size: cover;
+    margin-top: 5px;
+    
+}
+
+    #slice .left {
+       z-index:30;
+        width: 600px;
+        position: relative;
+        left: 75px;
+        top: 120px;
+    }
+
+        #slice .left h2 {
+            color: #A4A4A4;
+            font-size: 80px;
+            color: #adad90;
+        }
+
+        #slice .left h1 {
+            color: #A4A4A4;
+            font-size: 80px;
+            color: #adad90;
+            margin-left: 60px;
+        }
+
+        #slice .left p {
+            padding-top: 20px;
+            font-size: 25px;
+            color: #2E2E2E;
+        }
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 35px;
+    background-color: #819FF7;
+    border-radius: 30px;
+    font-size: 18px;
+    
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background-color: #464444;
+    }
+
+.slice .right {
+    position: absolute;
+    background: 20px;
+    right: 20px;
+}
+
+.hidden {
+    background-color: #464444;
+    position: absolute;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 40px;
+}
+
+    .hidden:hover {
+        color: #464444;
+    }
+
+/*banner*/
+.banner {
+    margin-top: 5px;
+}
+.bannerLeft {
+    height: 1000px;
+    width: 680px;
+    margin-right: 20px;
+    float: left;
+    background-image: url('../image/left.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.bannerRight {
+    margin-bottom: 20px;
+    width: 500px;
+    height: 680px;
+    float: left;
+    background-image: url('../image/right.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.textl {
+    position: absolute;
+    left: 350px;
+    bottom: 150px;
+    font-size: 50px;
+}
+
+.view1 {
+    position: absolute;
+    bottom: 120px;
+    left: 470px;
+    text-transform: uppercase;
+}
+
+.textR {
+    position: absolute;
+    padding-left: 20px;
+    top: 30px;
+    right: 270px;
+    bottom: 75px;
+    font-size: 60px;
+    color: #464444;
+}
+
+.view2 {
+    padding-left: 20px;
+    position: absolute;
+    top: 170px;
+    right: 340px;
+    bottom: 50px;
+    text-transform: uppercase;
+}
+
+#bannerbottom {
+    background-size: cover;
+    float: left;
+    width: 500px;
+    background-image: url('../image/anh.jpg');
+    padding-top: 20px ;
+    height: 290px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.textB {
+    position: absolute;
+    padding-left: 20px;
+    top: 30px;
+    right: 270px;
+    bottom: 75px;
+    font-size: 60px;
+    color: #464444;
+}
+/* content */
+#title {
+    color: #818753;
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+
+    #title strong {
+        color: #585858;
+    }
+
+.sp, .Name, .gia, .mua {
+    width: 285px;
+    margin-left: 20px;
+    float: left;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+}
+
+    .sp:first-child, .Name:first-child, .gia:first-child, .mua:first-child {
+        margin-left: 0;
+    }
+
+.sp {
+    margin-bottom: 5px;
+}
+
+    .sp img {
+        ~webkit-transform: scale(1.5);
+        ~moz-transform: scale(1.5);
+        ~ms-transform: scale(1.5);
+        ~o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+        .sp img:hover {
+            ~webkit-transform: scale(1.0);
+            ~moz-transform: scale(1.0);
+            ~ms-transform: scale(1.0);
+            ~o-transform: scale(1.0);
+            transform: scale(1.0);
+        }
+
+    .sp img {
+        height: 374px;
+    }
+
+#codau {
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: #585858;
+}
+
+.Name p {
+    font-size: 20px;
+    text-align: center;
+    color: #818753;
+    margin-bottom: 5px;
+}
+
+.gia {
+    text-align: center;
+    font-size: 30px;
+    color: #818753;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+    .gia span {
+        font-size: 20px;
+    }
+
+.mua {
+    text-align: center;
+}
+/* FOOTER*/
+.about{
+    width: 400px;
+    float: left;
+}
+.about #trai{
+    width: 70px;
+    height: 38px;
+    margin-top: 15px;
+    margin-right: 20px;
+    float: left;
+}
+.about #phai{
+    width: 245px;
+    color: #6C6666;
+    float: left;
+}
+.contact{
+    width: 400px;
+    float: left;
+
+}
+.contact p {
+    margin-top: 10px;
+    color: #6C6666;
+}
+.contact span {
+    font-size: 22px;
+    font-weight: bold;
+}
+.link{
+    width: 300px;
+    float: left;
+
+}
+.link p{
+    margin-top: 45px;
+}
+.footer{
+    margin-top: 10px;
+}
