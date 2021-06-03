@@ -69,23 +69,40 @@
   <ItemGroup>
     <Content Include="Combo.aspx" />
     <Content Include="css\StyleBridal.css" />
+    <Content Include="css\StyleDatLich.css" />
     <Content Include="css\StyleHome.css" />
     <Content Include="css\StyleHotline.css" />
     <Content Include="css\Stylelogin.css" />
+    <Content Include="css\StyleParty.css" />
+    <Content Include="DanhsachLichDat.aspx" />
     <Content Include="Dresses.aspx" />
+    <Content Include="image\abcd.jpg" />
     <Content Include="image\anh.jpg" />
     <Content Include="image\aodai.jpg" />
+    <Content Include="image\bia.jpg" />
+    <Content Include="image\biahome.jpg" />
+    <Content Include="image\biaparty.jpg" />
+    <Content Include="image\cachtan.jpg" />
+    <Content Include="image\catinh.jpg" />
     <Content Include="image\diudang.jpg" />
+    <Content Include="image\hoangda.jpg" />
+    <Content Include="image\hoanghau.jpg" />
+    <Content Include="image\home.jpg" />
     <Content Include="image\item3.jpg" />
     <Content Include="image\item33.jpg" />
     <Content Include="image\left.jpg" />
     <Content Include="image\logo.png" />
+    <Content Include="image\nhenhang.jpg" />
+    <Content Include="image\nuhoang.jpg" />
     <Content Include="image\quyphai.jpg" />
     <Content Include="image\right.jpg" />
     <Content Include="image\rsz_logo.png" />
     <Content Include="image\sangtrong.jpg" />
     <Content Include="image\slice.png" />
+    <Content Include="image\suonxam.jpg" />
     <Content Include="image\thomong.jpg" />
+    <Content Include="image\tuoimat.jpg" />
+    <Content Include="image\tuoimoi.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="MakeupBridal.aspx" />
     <Content Include="MakeupParty.aspx" />
@@ -93,6 +110,7 @@
     <Content Include="registration.aspx" />
     <Content Include="Web.config" />
     <Content Include="home.aspx" />
+    <Content Include="Datlich.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Combo.aspx.cs">
@@ -101,6 +119,13 @@
     </Compile>
     <Compile Include="Combo.aspx.designer.cs">
       <DependentUpon>Combo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhsachLichDat.aspx.cs">
+      <DependentUpon>DanhsachLichDat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhsachLichDat.aspx.designer.cs">
+      <DependentUpon>DanhsachLichDat.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dresses.aspx.cs">
       <DependentUpon>Dresses.aspx</DependentUpon>
@@ -151,6 +176,13 @@
     </Compile>
     <Compile Include="registration.aspx.designer.cs">
       <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Datlich.aspx.cs">
+      <DependentUpon>Datlich.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Datlich.aspx.designer.cs">
+      <DependentUpon>Datlich.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

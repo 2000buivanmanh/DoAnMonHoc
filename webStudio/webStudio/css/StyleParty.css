@@ -21,13 +21,14 @@ p {
     color: #464444;
     font-size: 18px;
 }
+
 .container {
     width: 1200px;
     margin: auto;
 }
 
 header {
-    z-index:50;
+    z-index: 50;
     position: fixed;
     top: 0;
     left: 0;
@@ -36,15 +37,17 @@ header {
     padding: 15px 0px;
     transition: all 0.5s ease-in-out;
 }
-.sticky{
+
+.sticky {
     background-color: #fff;
     opacity: 0.9;
     padding: 2px 0px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
-.sticky #mainmenu a{
-    color: #000;
-}
+
+    .sticky #mainmenu a {
+        color: #000;
+    }
 /*menu*/
 
 .innerheader {
@@ -53,21 +56,21 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 ul#mainmenu {
     display: flex;
 }
 
-ul#mainmenu a {
-    display:block;
-    color:#fff;
-    padding: 10px 20px;
-    text-transform: uppercase;
-}
+    ul#mainmenu a {
+        display: block;
+        color: #fff;
+        padding: 10px 20px;
+        text-transform: uppercase;
+    }
 
 .innerheader img {
     width: 100px;
     height: 60px;
-   
 }
 
 innerheader img:hover {
@@ -75,17 +78,16 @@ innerheader img:hover {
 }
 /*SLICE*/
 #slice {
-    z-index:30;
+    z-index: 30;
     height: 800px;
     width: 100%;
-    background-image: url("../image/home.jpg");
+    background-image: url("../image/biaparty.jpg");
     background-size: cover;
     margin-top: 5px;
-    
 }
 
     #slice .left {
-       z-index:30;
+        z-index: 30;
         width: 600px;
         position: relative;
         left: 75px;
@@ -117,7 +119,6 @@ innerheader img:hover {
     background-color: #819FF7;
     border-radius: 30px;
     font-size: 18px;
-    
     cursor: pointer;
 }
 
@@ -147,6 +148,7 @@ innerheader img:hover {
 .banner {
     margin-top: 5px;
 }
+
 .bannerLeft {
     height: 1000px;
     width: 680px;
@@ -205,7 +207,7 @@ innerheader img:hover {
     float: left;
     width: 500px;
     background-image: url('../image/anh.jpg');
-    padding-top: 20px ;
+    padding-top: 20px;
     height: 290px;
     position: relative;
     padding-bottom: 10px;
@@ -264,7 +266,7 @@ innerheader img:hover {
             transform: scale(1.0);
         }
 
-    .sp img , image {
+    .sp img, image {
         height: 374px;
     }
 
@@ -297,43 +299,49 @@ innerheader img:hover {
     text-align: center;
 }
 /* FOOTER*/
-.about{
+.about {
     width: 400px;
     float: left;
 }
-.about #trai{
-    width: 70px;
-    height: 38px;
-    margin-top: 15px;
-    margin-right: 20px;
-    float: left;
-}
-.about #phai{
-    width: 245px;
-    color: #6C6666;
-    float: left;
-}
-.contact{
-    width: 400px;
-    float: left;
 
+    .about #trai {
+        width: 70px;
+        height: 38px;
+        margin-top: 15px;
+        margin-right: 20px;
+        float: left;
+    }
+
+    .about #phai {
+        width: 245px;
+        color: #6C6666;
+        float: left;
+    }
+
+.contact {
+    width: 400px;
+    float: left;
 }
-.contact p {
-    margin-top: 10px;
-    color: #6C6666;
-}
-.contact span {
-    font-size: 22px;
-    font-weight: bold;
-}
-.link{
+
+    .contact p {
+        margin-top: 10px;
+        color: #6C6666;
+    }
+
+    .contact span {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+.link {
     width: 300px;
     float: left;
+}
 
-}
-.link p{
-    margin-top: 45px;
-}
-.footer{
+    .link p {
+        margin-top: 45px;
+    }
+
+.footer {
     margin-top: 10px;
 }

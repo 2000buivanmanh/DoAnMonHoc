@@ -6,11 +6,36 @@
 <head runat="server">
     <title>Makeup Bridal</title>
 	<link rel="stylesheet" href="css/StyleHome.css">
+	<link rel="stylesheet" href="css/StyleHotline.css">
 
     <style type="text/css">
         .auto-style1 {
             width: 101px;
             height: 70px;
+        }
+       
+        .auto-style1 {
+            font-size: 16px;
+            font-family:Cambria;
+           
+        }
+        .auto-style2 {
+            width: 100%;
+        }
+        td,input {
+            font-family:Cambria;
+            font-size:12px;
+            text-align:center;
+            padding:5px;
+            margin:5px;
+            vertical-align:top;
+        }
+        .auto-style3 {
+            margin-left: 47px;
+            margin-right: 147px;
+        }
+        #title{
+            margin-left:100px;
         }
     </style>
 
@@ -37,8 +62,8 @@
 				</div>
 		<div  id="slice">			
 					<div class="left" style="left: 75px; top: 120px">
-						<h2><i>Wedding</i> </h2>
-						<h1>Studio</h1>
+						<h2><i>Makeup</i> </h2>
+						<h1>Bridal</h1>
 						<p>Hãy để chúng tôi lưu giữ khoảnh khắc đẹp nhất của bạn</p>
 						
 					</div>
@@ -55,6 +80,84 @@
                     });
                 });
             </script>
+
+
+
+		 <div>
+    
+        <span id="title" ><strong>MAKEUP DRIDAL<br />
+        </strong></span><br />
+    
+    </div>
+        <asp:DataList  ID="DataList1" runat="server" DataKeyField="MaDV" DataSourceID="SqlDataSource1" RepeatColumns="4" CssClass="auto-style3" Width="1379px" OnItemCommand="DataList1_ItemCommand1" >
+            <ItemTemplate>
+                <table class="auto-style2 ">
+                    <tr>
+                        <td>
+                            <asp:Image ID="Image1" runat="server" Height="375px" ImageUrl='<%# Eval("HinhAnh") %>' Width="285px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="Label1" runat="server" CssClass="Name" Text='<%# Eval("TenDV") %>'></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="Label2" CssClass="gia" runat="server" Text='<%# Eval("GiaDV") %>'></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button ID="Button1" runat="server" CssClass="btn" Text="Đặt Lịch"  CommandName="Datlich" OnClick="Button1_Click" CommandArgument='<%# Eval("MaDV") + ";" + Eval("TenDV") + ";" + Eval("GiaDV") + ";" + Eval("HinhAnh")%>' />
+                            <asp:Button ID="Button2" runat="server" Text="Add To Cart" Width="82px" CommandName="Add"/>
+                        </td>
+                    </tr>
+                </table>
+            </ItemTemplate>
+        </asp:DataList>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:STUDIOConnectionString %>" DeleteCommand="DELETE FROM [DichVu] WHERE [MaDV] = @MaDV" InsertCommand="INSERT INTO [DichVu] ([MaDV], [MaLDV], [TenDV], [GiaDV], [HinhAnh]) VALUES (@MaDV, @MaLDV, @TenDV, @GiaDV, @HinhAnh)" SelectCommand="SELECT * FROM [DichVu]
+WHERE MaLDV='LDV1'" UpdateCommand="UPDATE [DichVu] SET [MaLDV] = @MaLDV, [TenDV] = @TenDV, [GiaDV] = @GiaDV, [HinhAnh] = @HinhAnh WHERE [MaDV] = @MaDV">
+            <DeleteParameters>
+                <asp:Parameter Name="MaDV" Type="String" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="MaDV" Type="String" />
+                <asp:Parameter Name="MaLDV" Type="String" />
+                <asp:Parameter Name="TenDV" Type="String" />
+                <asp:Parameter Name="GiaDV" Type="Double" />
+                <asp:Parameter Name="HinhAnh" Type="String" />
+            </InsertParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="MaLDV" Type="String" />
+                <asp:Parameter Name="TenDV" Type="String" />
+                <asp:Parameter Name="GiaDV" Type="Double" />
+                <asp:Parameter Name="HinhAnh" Type="String" />
+                <asp:Parameter Name="MaDV" Type="String" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
+
+
+<div class="hotline-phone-ring-wrap">		
+			<div class="hotline-phone-ring">
+			<div class="hotline-phone-ring-circle"></div>
+			<div class="hotline-phone-ring-circle-fill"></div>
+			<div class="hotline-phone-ring-img-circle"> <a href="tel:0362720346" class="pps-btn-img"> <img src="https://netweb.vn/img/hotline/icon.png" alt="so dien thoai" width="50"> </a></div>
+		</div>		
+		<div class="hotline-bar"> 
+			<a href="tel:0362720346"> <span class="text-hotline">036 272 0346</span> </a>
+		</div>			 
+		
+</div>
+
+
+
+<div class="float-icon-hotline">			
+		<ul class ="left-icon hotline">
+			<li class="hotline_float_icon"><a target="_blank" rel="nofollow" id="messengerButton" href="https://zalo.me/0362720346"><i class="fa fa-zalo animated infinite tada"></i><span>Zalo</span></a></li>
+			<li class="hotline_float_icon"><a target="_blank" rel="nofollow" id="messengerButton" href="https://www.facebook.com/buivanmanh01655/"><i class="fa fa-messenger animated infinite tada"></i><span>Facebook</span></a></li>
+		</ul>		
+</div>
     </form>
 </body>
 </html>

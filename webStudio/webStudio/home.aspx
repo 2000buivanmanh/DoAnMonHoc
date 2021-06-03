@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="webStudio.WebForm1" %>
+﻿ <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="webStudio.WebForm1" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>home</title>
-	<link rel="stylesheet" href="css/StyleHome.css">
+	<link rel="stylesheet" href="css/StyleBridal.css">
 	<link rel="stylesheet" href="css/StyleHotline.css">
     <style type="text/css">
         .auto-style1 {
@@ -51,8 +51,8 @@
 					<div class="left" style="left: 75px; top: 120px">
 						<h2><i>Wedding</i> </h2>
 						<h1>Studio</h1>
-						<p>Hãy để chúng tôi lưu giữ khoảnh khắc đẹp nhất của bạn</p>
-						<asp:Button runat="server" ID="btnBrowse" class="btn" Text="Browse"></asp:Button>
+						
+						
 					</div>
 				</div>
 		
@@ -137,13 +137,13 @@
 					<img src="image/left.jpg" alt="">
 				</a>
 				<a class="sp" href="#">
-					<img src="image/aodai.jpg" alt="">
+					<img src="image/hoanghau.jpg" alt="">
 				</a>
 				<a class="sp" href="#">
 					<img src="image/thomong.jpg" alt="">
 				</a>
 				<a class="sp" href="#">
-					<img src="image/aodai.jpg" alt="">
+					<img src="image/catinh.jpg" alt="">
 				</a>
 			</div>
 			<dir class="layer2">

@@ -13,5 +13,20 @@ namespace webStudio
         {
 
         }
+
+        protected void DataList1_ItemCommand1(object source, DataListCommandEventArgs e)
+        {
+            String[] arrayItem = new string[4];
+            arrayItem = e.CommandArgument.ToString().Split(';');
+            String MaDV = arrayItem[0];
+            String TenDV = arrayItem[1];
+            String giaDV = arrayItem[2] + "đ";
+            String HinhAnh = arrayItem[3];
+            Session["MaDV"] = MaDV;
+            Session["TenDV"] = TenDV;
+            Session["GiaDv"] = giaDV;
+            Session["img"] = HinhAnh;
+            Response.Redirect("Datlich.aspx");
+        }
     }
 }
