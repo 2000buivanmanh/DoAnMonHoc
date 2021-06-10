@@ -5,8 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-	<link rel="stylesheet" href="css/StyleParty.css">
-	<link rel="stylesheet" href="css/StyleHotline.css">
+	<link rel="stylesheet" href="css/StyleParty.css"/>
+	<link rel="stylesheet" href="css/StyleHotline.css"/>
      <style type="text/css">
         .auto-style1 {
             width: 101px;
@@ -23,7 +23,7 @@
         }
         td,input {
             font-family:Cambria;
-            font-size:12px;
+            font-size:25px;
             text-align:center;
             padding:5px;
             margin:5px;
@@ -33,9 +33,17 @@
             margin-left: 47px;
             margin-right: 147px;
         }
-        #title{
+        .title{
+            color:#CBD44C;
             margin-left:100px;
+            font-family:Bookman;
+            font-size:50px;
         }
+         .auto-style4 {
+             
+             width: 1217px;
+             margin-left: 131px;
+         }
     </style>
 
 </head>
@@ -44,7 +52,7 @@
         <div class="container">
 				<header>
 					<div class="innerheader container">
-						<a href="#"><img src="image/logo.png" class="auto-style1"></a>
+						<a href="#"><img src="image/logo.png" class="auto-style1"/></a>
 						<nav>
 							<ul id="mainmenu">							
 							<li><a href="home.aspx">home</a></li>
@@ -64,7 +72,7 @@
 					<div class="left" style="left: 75px; top: 120px">
 						<h2><i>Make up</i> </h2>
 						<h1>Party</h1>
-						<p>Hãy là người đẹp nhất trong buổi tiệc</p>
+						
 						
 					</div>
 				</div>
@@ -85,21 +93,33 @@
 
 		 <div>
     
-        <span id="title" ><strong>MAKEUP Party<br />
+        <span class="title" ><strong>MakeUp Party<br />
         </strong></span><br />
+             <div class="auto-style4">
+                 <p>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     Một cô gái sau khi trang điểm, xuất hiện trong bữa tiệc với đầy dãy những ánh nhìn ngưỡng mộ,
+                     thì sự tự tin khi ấy thực sự vững bước giúp cô ấy bước đến chủ động bắt tay giao tiếp với mọi người.
+                     Đó là lúc mà sự tự tin thật sự tồn tại.<br /><br />
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     Bất kỳ phái đẹp nào cũng vậy, khi nét đẹp của mình thu hút ánh nhìn người khác, 
+                     thì tự nhiên sự tự tin tự khắc sẽ được củng cố. Thành công của trang điểm chính là biết cách tạo nên cái đẹp từ hình
+                     dáng bên ngoài đến nâng cao cái tính chất bên trong của phái đẹp. Gíup các nàng tỏ sáng ở mọi lúc mọi nơi.
+                 </p>
+             </div><br /><br />
     
     </div>
         <asp:DataList  ID="DataList1" runat="server" DataKeyField="MaDV" DataSourceID="SqlDataSource1" RepeatColumns="4" CssClass="auto-style3" Width="1379px" OnItemCommand="DataList1_ItemCommand1"  >
             <ItemTemplate>
                 <table class="auto-style2 ">
-                    <tr>
-                        <td>
+                    <tr class="content">
+                        <td class="sp">
                             <asp:Image ID="Image1" runat="server" Height="375px" ImageUrl='<%# Eval("HinhAnh") %>' Width="285px" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label1" runat="server" CssClass="Name" Text='<%# Eval("TenDV") %>'></asp:Label>
+                            <asp:Label ID="Label1" runat="server" CssClass="name" Text='<%# Eval("TenDV") %>'></asp:Label>
                         </td>
                     </tr>
                     <tr>
@@ -110,7 +130,7 @@
                     <tr>
                         <td>
                             <asp:Button ID="Button1" runat="server" CssClass="btn" Text="Đặt Lịch"  CommandName="Datlich"  CommandArgument='<%# Eval("MaDV") + ";" + Eval("TenDV") + ";" + Eval("GiaDV") + ";" + Eval("HinhAnh")%>' />
-                            <asp:Button ID="Button2" runat="server" Text="Add To Cart" Width="82px" CommandName="Add"/>
+                            
                         </td>
                     </tr>
                 </table>

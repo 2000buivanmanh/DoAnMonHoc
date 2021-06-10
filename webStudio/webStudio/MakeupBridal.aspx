@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Makeup Bridal</title>
-	<link rel="stylesheet" href="css/StyleHome.css">
+	<link rel="stylesheet" href="css/StyleParty.css">
 	<link rel="stylesheet" href="css/StyleHotline.css">
 
     <style type="text/css">
@@ -24,7 +24,7 @@
         }
         td,input {
             font-family:Cambria;
-            font-size:12px;
+            font-size:25px;
             text-align:center;
             padding:5px;
             margin:5px;
@@ -36,6 +36,9 @@
         }
         #title{
             margin-left:100px;
+        }
+        .name label{
+            font-size:30px;
         }
     </style>
 
@@ -92,25 +95,26 @@
         <asp:DataList  ID="DataList1" runat="server" DataKeyField="MaDV" DataSourceID="SqlDataSource1" RepeatColumns="4" CssClass="auto-style3" Width="1379px" OnItemCommand="DataList1_ItemCommand1" >
             <ItemTemplate>
                 <table class="auto-style2 ">
-                    <tr>
-                        <td>
+                    <tr class="content">
+                        <td class="sp">
                             <asp:Image ID="Image1" runat="server" Height="375px" ImageUrl='<%# Eval("HinhAnh") %>' Width="285px" />
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <asp:Label ID="Label1" runat="server" CssClass="Name" Text='<%# Eval("TenDV") %>'></asp:Label>
+                        <td class="Name">
+                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("TenDV") %>'></asp:Label>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <asp:Label ID="Label2" CssClass="gia" runat="server" Text='<%# Eval("GiaDV") %>'></asp:Label>
+                            
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <asp:Button ID="Button1" runat="server" CssClass="btn" Text="Đặt Lịch"  CommandName="Datlich" OnClick="Button1_Click" CommandArgument='<%# Eval("MaDV") + ";" + Eval("TenDV") + ";" + Eval("GiaDV") + ";" + Eval("HinhAnh")%>' />
-                            <asp:Button ID="Button2" runat="server" Text="Add To Cart" Width="82px" CommandName="Add"/>
+                            
                         </td>
                     </tr>
                 </table>

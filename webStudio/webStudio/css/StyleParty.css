@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: #fff;
+    background-color: #0B0719;
     color: #000;
 }
 
@@ -16,10 +16,12 @@ a {
     a:hover, a:hover p {
         color: #adad90;
     }
-
+ul {
+    list-style-type: none;
+}
 p {
-    color: #464444;
-    font-size: 18px;
+    color: white;
+    font-size: 25px;
 }
 
 .container {
@@ -95,29 +97,27 @@ innerheader img:hover {
     }
 
         #slice .left h2 {
-            color: #A4A4A4;
+            color: #0B0719;
             font-size: 80px;
-            color: #adad90;
         }
 
         #slice .left h1 {
-            color: #A4A4A4;
+            color: #0B0719;
             font-size: 80px;
-            color: #adad90;
-            margin-left: 60px;
+            margin-left: 170px;
         }
 
         #slice .left p {
             padding-top: 20px;
             font-size: 25px;
-            color: #2E2E2E;
+            color: #0B0719;
         }
 
 .btn {
-    margin-top: 20px;
+    color:white;
+   font-family:Bookman;
     padding: 10px 35px;
-    background-color: #819FF7;
-    border-radius: 30px;
+    background-color:brown;
     font-size: 18px;
     cursor: pointer;
 }
@@ -251,6 +251,7 @@ innerheader img:hover {
 }
 
     .sp img, image {
+        transition: all 0.3s ease-in-out;
         ~webkit-transform: scale(1.5);
         ~moz-transform: scale(1.5);
         ~ms-transform: scale(1.5);
@@ -270,14 +271,10 @@ innerheader img:hover {
         height: 374px;
     }
 
-#codau {
-    margin-bottom: 5px;
-    font-size: 30px;
-    color: #585858;
-}
 
-.Name p, label {
-    font-size: 20px;
+
+.name{
+    font-size: 22px;
     text-align: center;
     color: #818753;
     margin-bottom: 5px;
@@ -285,10 +282,9 @@ innerheader img:hover {
 
 .gia {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     color: #818753;
     text-align: center;
-    margin-bottom: 5px;
 }
 
     .gia span {

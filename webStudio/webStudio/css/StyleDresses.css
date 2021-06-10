@@ -1,0 +1,184 @@
+﻿body {
+    background-color: #0B0719;
+    color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #696969;
+}
+
+    a:hover, a:hover p {
+        color: #adad90;
+    }
+
+p {
+    color: #464444;
+    font-size: 18px;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+header {
+    z-index:50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0px;
+    transition: all 0.5s ease-in-out;
+}
+.sticky{
+    background-color: #fff;
+    opacity: 0.9;
+    padding: 2px 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+}
+.sticky #mainmenu a{
+    color: #000;
+}
+/*menu*/
+
+.innerheader {
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul#mainmenu {
+    display: flex;
+}
+
+ul#mainmenu a {
+    display:block;
+    color:#fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.innerheader img {
+    width: 100px;
+    height: 60px;
+   
+}
+
+innerheader img:hover {
+    opacity: 0;
+}
+
+   
+
+
+
+
+
+
+.sp, .gia  {
+    
+    margin-left: 20px;
+    float: left;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+}
+
+    .sp:first-child, .Name:first-child, .gia:first-child, .mua:first-child {
+        margin-left: 10px;
+    }
+
+.sp {
+    
+    width: 740px;
+    height:650px;
+    margin-bottom: 5px;
+}
+
+    .sp img, image {
+        ~webkit-transform: scale(1.2);
+        ~moz-transform: scale(1.2);
+        ~ms-transform: scale(1.2);
+        ~o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+        .sp img:hover, image:hover {
+            transition: all 0.5s ease-in-out;
+            ~webkit-transform: scale(1.0);
+            ~moz-transform: scale(1.0);
+            ~ms-transform: scale(1.0);
+            ~o-transform: scale(1.0);
+            transform: scale(1.0);
+        }
+
+   
+
+.Name p, label {
+    font-size: 25px;
+    text-align: center;
+    color: #818753;
+    margin-bottom: 5px;
+}
+
+.gia {
+    font-size: 30px;
+    color: #CBD44C;
+    margin-bottom: 5px;
+}
+
+    .gia span {
+        font-size: 20px;
+    }
+
+
+/* FOOTER*/
+.about{
+    width: 600px;
+    float: left;
+}
+.about #trai{
+    width: 70px;
+    height: 38px;
+    margin-top: 15px;
+    margin-right: 20px;
+    float: left;
+    color:white;
+}
+.about #phai{
+    width: 245px;
+    color: #6C6666;
+    float: left;
+}
+.contact{
+    width: 500px;
+    float: left;
+
+}
+.contact p {
+    margin-top: 10px;
+    color: white;
+}
+.contact span {
+    font-size: 22px;
+    font-weight: bold;
+}
+.link{
+    width: 500px;
+    float: left;
+
+}
+.link p{
+    margin-top: 45px;
+}
+.footer{
+    margin-top: 10px;
+}

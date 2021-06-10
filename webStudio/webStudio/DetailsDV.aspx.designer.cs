@@ -11,7 +11,7 @@ namespace webStudio
 {
 
 
-    public partial class Dresses
+    public partial class DetailsDV
     {
 
         /// <summary>
@@ -24,13 +24,13 @@ namespace webStudio
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// DataList1 control.
+        /// DetailsViewDV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList DataList1;
+        protected global::System.Web.UI.WebControls.DetailsView DetailsViewDV;
 
         /// <summary>
         /// SqlDataSource1 control.

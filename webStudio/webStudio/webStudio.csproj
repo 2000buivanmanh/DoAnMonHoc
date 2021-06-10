@@ -68,16 +68,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Combo.aspx" />
-    <Content Include="css\StyleBridal.css" />
+    <Content Include="css\StyleDresses.css" />
     <Content Include="css\StyleDatLich.css" />
     <Content Include="css\StyleHome.css" />
     <Content Include="css\StyleHotline.css" />
     <Content Include="css\Stylelogin.css" />
     <Content Include="css\StyleParty.css" />
-    <Content Include="DanhsachLichDat.aspx" />
+    <Content Include="Admin.aspx" />
+    <Content Include="DetailsDV.aspx" />
     <Content Include="Dresses.aspx" />
     <Content Include="image\abcd.jpg" />
     <Content Include="image\anh.jpg" />
+    <Content Include="image\aocuoi.jpg" />
     <Content Include="image\aodai.jpg" />
     <Content Include="image\bia.jpg" />
     <Content Include="image\biahome.jpg" />
@@ -98,11 +100,17 @@
     <Content Include="image\right.jpg" />
     <Content Include="image\rsz_logo.png" />
     <Content Include="image\sangtrong.jpg" />
-    <Content Include="image\slice.png" />
+    <Content Include="image\slice.jpg" />
     <Content Include="image\suonxam.jpg" />
     <Content Include="image\thomong.jpg" />
     <Content Include="image\tuoimat.jpg" />
     <Content Include="image\tuoimoi.jpg" />
+    <Content Include="image\vaycuoi.jpg" />
+    <Content Include="image\vaycuoi1.jpg" />
+    <Content Include="image\vaycuoi2.jpg" />
+    <Content Include="image\vaycuoi3.jpg" />
+    <Content Include="image\vaycuoi4.jpg" />
+    <Content Include="image\vaycuoi5.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="MakeupBridal.aspx" />
     <Content Include="MakeupParty.aspx" />
@@ -120,12 +128,19 @@
     <Compile Include="Combo.aspx.designer.cs">
       <DependentUpon>Combo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DanhsachLichDat.aspx.cs">
-      <DependentUpon>DanhsachLichDat.aspx</DependentUpon>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DanhsachLichDat.aspx.designer.cs">
-      <DependentUpon>DanhsachLichDat.aspx</DependentUpon>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsDV.aspx.cs">
+      <DependentUpon>DetailsDV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailsDV.aspx.designer.cs">
+      <DependentUpon>DetailsDV.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dresses.aspx.cs">
       <DependentUpon>Dresses.aspx</DependentUpon>
