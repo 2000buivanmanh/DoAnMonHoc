@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Makeup Bridal</title>
-	<link rel="stylesheet" href="css/StyleParty.css">
+	<link rel="stylesheet" href="css/StyleBridal.css">
 	<link rel="stylesheet" href="css/StyleHotline.css">
 
     <style type="text/css">
@@ -31,7 +31,7 @@
             vertical-align:top;
         }
         .auto-style3 {
-            margin-left: 47px;
+            margin-left: 83px;
             margin-right: 147px;
         }
         #title{
@@ -40,15 +40,54 @@
         .name label{
             font-size:30px;
         }
+        .auto-style4 {
+            position: absolute;
+            left: 244px;
+            bottom: 184px;
+            font-size: 50px;
+            width: 429px;
+            height: 59px;
+        }
+        .auto-style5 {
+            position: absolute;
+            bottom: 139px;
+            left: 305px;
+            text-transform: uppercase;
+            width: 299px;
+            height: 32px;
+        }
+        .auto-style6 {
+            padding-left: 20px;
+            position: absolute;
+            top: 175px;
+            right: 340px;
+            bottom: -50px;
+            text-transform: uppercase;
+            width: 270px;
+        }
+        
+        .auto-style7 {
+            position: absolute;
+            top: 10px;
+            right: 338px;
+            bottom: -75px;
+            font-size: 60px;
+            color: white;
+            width: 285px;
+            margin-left: 39px;
+            padding-left: 20px;
+            padding-top: 30px;
+        }
+        
     </style>
 
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container">
+        <div >
 				<header>
 					<div class="innerheader container">
-						<a href="#"><img src="image/logo.png" class="auto-style1"></a>
+						<a href="#"><img src="image/logo.png" class="auto-style1" /></a>
 						<nav>
 							<ul id="mainmenu">							
 							<li><a href="home.aspx">home</a></li>
@@ -63,14 +102,8 @@
 					</div>
 				</header>
 				</div>
-		<div  id="slice">			
-					<div class="left" style="left: 75px; top: 120px">
-						<h2><i>Makeup</i> </h2>
-						<h1>Bridal</h1>
-						<p>Hãy để chúng tôi lưu giữ khoảnh khắc đẹp nhất của bạn</p>
-						
-					</div>
-				</div>
+		
+
 		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 			<script>
                 $(document).ready(function () {
@@ -83,13 +116,39 @@
                     });
                 });
             </script>
-
-
+        <div class="slide">
+		            <div class="dieuhuong">
+			            <i class="fa fa-chevron-circle-left" onclick="Back();"></i>
+			            <i class="fa fa-chevron-circle-right" onclick="Next();"></i>
+		            </div>
+		            <div class="chuyen-slide">			
+			            <img class="bb" src="image/em.jpg" /> // 1000			            
+                        <img class="bb" src="image/em2.jpg" /> 
+                        <img class="bb" src="image/em3.jpg" />
+                        <img class="bb" src="image/em5.jpg" /> 
+                        <img class="bb" src="image/em4.jpg" /> 
+		            </div>
+	            </div>
+        <div class="banner">
+		        
+        <div >
+           
+				<p class="auto-style4">Makeup and <strong>Dresses</strong></p>
+				<p class="auto-style5">5.000.000Đ - 10.000.000Đ</p>
+			<a class="bannerRight" href="MakeupBridal.aspx">
+				<p class="auto-style7">Makeup <br/> <strong>Bridal</strong></p>
+				<p class="auto-style6">Price only from:<br/> 1.500.000đ!</p>
+			</a>
+			
+			<a id="bannerbottom" href="Photo.aspx">
+				<p class="textB">Photo</p>
+			</a>
+		</div>
+        </div>
 
 		 <div>
     
-        <span id="title" ><strong>MAKEUP DRIDAL<br />
-        </strong></span><br />
+        
     
     </div>
         <asp:DataList  ID="DataList1" runat="server" DataKeyField="MaDV" DataSourceID="SqlDataSource1" RepeatColumns="4" CssClass="auto-style3" Width="1379px" OnItemCommand="DataList1_ItemCommand1" >
@@ -101,8 +160,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="Name">
-                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("TenDV") %>'></asp:Label>
+                        <td >
+                            <asp:Label ID="Label1" CssClass="name" runat="server" Text='<%# Eval("TenDV") %>'></asp:Label>
                         </td>
                     </tr>
                     <tr>
@@ -162,6 +221,7 @@ WHERE MaLDV='LDV1'" UpdateCommand="UPDATE [DichVu] SET [MaLDV] = @MaLDV, [TenDV]
 			<li class="hotline_float_icon"><a target="_blank" rel="nofollow" id="messengerButton" href="https://www.facebook.com/buivanmanh01655/"><i class="fa fa-messenger animated infinite tada"></i><span>Facebook</span></a></li>
 		</ul>		
 </div>
+        <script type="text/javascript" src="scrip/slide.js"></script>
     </form>
 </body>
 </html>

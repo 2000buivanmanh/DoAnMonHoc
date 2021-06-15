@@ -17,7 +17,7 @@ a {
         color: #adad90;
     }
 ul {
-    list-style-type: none;
+    list-style-type:none;
 }
 p {
     color: white;
@@ -78,6 +78,7 @@ ul#mainmenu {
 innerheader img:hover {
     opacity: 0;
 }
+
 /*SLICE*/
 #slice {
     z-index: 30;
@@ -87,32 +88,7 @@ innerheader img:hover {
     background-size: cover;
     margin-top: 5px;
 }
-
-    #slice .left {
-        z-index: 30;
-        width: 600px;
-        position: relative;
-        left: 75px;
-        top: 120px;
-    }
-
-        #slice .left h2 {
-            color: #0B0719;
-            font-size: 80px;
-        }
-
-        #slice .left h1 {
-            color: #0B0719;
-            font-size: 80px;
-            margin-left: 170px;
-        }
-
-        #slice .left p {
-            padding-top: 20px;
-            font-size: 25px;
-            color: #0B0719;
-        }
-
+ 
 .btn {
     color:white;
    font-family:Bookman;
@@ -126,11 +102,6 @@ innerheader img:hover {
         background-color: #464444;
     }
 
-.slice .right {
-    position: absolute;
-    background: 20px;
-    right: 20px;
-}
 
 .hidden {
     background-color: #464444;
@@ -143,6 +114,8 @@ innerheader img:hover {
     .hidden:hover {
         color: #464444;
     }
+
+/*banner*/
 
 /*banner*/
 .banner {
@@ -223,6 +196,24 @@ innerheader img:hover {
     color: #464444;
 }
 /* content */
+.banner {
+    margin-top: 5px;
+}
+
+
+.textR {
+    position: absolute;
+    padding-left: 20px;
+    top: 30px;
+    right: 270px;
+    bottom: 75px;
+    font-size: 60px;
+    color: #464444;
+}
+
+
+
+/* content */
 #title {
     color: #818753;
     margin-bottom: 5px;
@@ -294,6 +285,8 @@ innerheader img:hover {
 .mua {
     text-align: center;
 }
+
+
 /* FOOTER*/
 .about {
     width: 400px;

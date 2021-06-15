@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Combo.aspx" />
+    <Content Include="css\slide.css" />
+    <Content Include="css\StyleBridal.css" />
     <Content Include="css\StyleDresses.css" />
     <Content Include="css\StyleDatLich.css" />
     <Content Include="css\StyleHome.css" />
@@ -75,8 +77,11 @@
     <Content Include="css\Stylelogin.css" />
     <Content Include="css\StyleParty.css" />
     <Content Include="Admin.aspx" />
-    <Content Include="DetailsDV.aspx" />
+    <Content Include="css\Stylephoto.css" />
+    <Content Include="css\Styletest.css" />
     <Content Include="Dresses.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="image\3.jpg" />
     <Content Include="image\abcd.jpg" />
     <Content Include="image\anh.jpg" />
     <Content Include="image\aocuoi.jpg" />
@@ -87,6 +92,15 @@
     <Content Include="image\cachtan.jpg" />
     <Content Include="image\catinh.jpg" />
     <Content Include="image\diudang.jpg" />
+    <Content Include="image\em.jpg" />
+    <Content Include="image\em1.jpg" />
+    <Content Include="image\em2.jpg" />
+    <Content Include="image\em3.jpg" />
+    <Content Include="image\em4.jpg" />
+    <Content Include="image\em5.jpg" />
+    <Content Include="image\em6.jpg" />
+    <Content Include="image\em8.jpg" />
+    <Content Include="image\hihi.jpg" />
     <Content Include="image\hoangda.jpg" />
     <Content Include="image\hoanghau.jpg" />
     <Content Include="image\home.jpg" />
@@ -96,6 +110,31 @@
     <Content Include="image\logo.png" />
     <Content Include="image\nhenhang.jpg" />
     <Content Include="image\nuhoang.jpg" />
+    <Content Include="image\photo\a1.jpg" />
+    <Content Include="image\photo\a2.jpg" />
+    <Content Include="image\photo\a3.jpg" />
+    <Content Include="image\photo\a4.jpg" />
+    <Content Include="image\photo\a5.jpg" />
+    <Content Include="image\photo\a6.jpg" />
+    <Content Include="image\photo\b1.jpg" />
+    <Content Include="image\photo\b2.jpg" />
+    <Content Include="image\photo\b3.jpg" />
+    <Content Include="image\photo\b4.jpg" />
+    <Content Include="image\photo\b5.jpg" />
+    <Content Include="image\photo\c1.jpg" />
+    <Content Include="image\photo\c2.jpg" />
+    <Content Include="image\photo\c3.jpg" />
+    <Content Include="image\photo\c4.jpg" />
+    <Content Include="image\photo\d1.jpg" />
+    <Content Include="image\photo\d2.jpg" />
+    <Content Include="image\photo\d3.jpg" />
+    <Content Include="image\photo\d4.jpg" />
+    <Content Include="image\photo\d5.jpg" />
+    <Content Include="image\photo\d6.jpg" />
+    <Content Include="image\photo\d7.jpg" />
+    <Content Include="image\photo\d8.jpg" />
+    <Content Include="image\photo\d9.jpg" />
+    <Content Include="image\photo\video.mp4" />
     <Content Include="image\quyphai.jpg" />
     <Content Include="image\right.jpg" />
     <Content Include="image\rsz_logo.png" />
@@ -111,11 +150,13 @@
     <Content Include="image\vaycuoi3.jpg" />
     <Content Include="image\vaycuoi4.jpg" />
     <Content Include="image\vaycuoi5.jpg" />
+    <Content Include="image\xong.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="MakeupBridal.aspx" />
     <Content Include="MakeupParty.aspx" />
     <Content Include="Photo.aspx" />
     <Content Include="registration.aspx" />
+    <Content Include="scrip\slide.js" />
     <Content Include="Web.config" />
     <Content Include="home.aspx" />
     <Content Include="Datlich.aspx" />
@@ -135,19 +176,15 @@
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DetailsDV.aspx.cs">
-      <DependentUpon>DetailsDV.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DetailsDV.aspx.designer.cs">
-      <DependentUpon>DetailsDV.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Dresses.aspx.cs">
       <DependentUpon>Dresses.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Dresses.aspx.designer.cs">
       <DependentUpon>Dresses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -209,9 +246,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="scrip\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

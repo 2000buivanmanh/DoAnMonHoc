@@ -9,34 +9,41 @@
     
 </head>
 <body>
-        <div class="container">
-            <form id="form1" runat="server">
-                <h1>Đăng nhập</h1>
-                <div class="form-field">
+       <div class="container">
+           <form id="form1" runat="server">
+            <div class="khung">
+               <div>
+                    <h1 class="header">Đăng nhập</h1>
+               </div>
+                <div class="formfield">
                 <a class="name">Tên đăng nhập</a>
-                <div>
-                    <asp:TextBox CssClass="textbox" ID="txtTendangnhap" runat="server"></asp:TextBox>
+                <div class="">
+                    <asp:TextBox ID="txtTendangnhap" runat="server" Width="248px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*"
                          SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtTendangnhap"></asp:RequiredFieldValidator>
                 </div>   
             </div>
-            <div class="form-field">
+            <div class="formfield">
                 <a class="name">Mật khẩu</a>
                 <div >
-                    <asp:TextBox CssClass="textbox" ID="txtMatkhau" runat="server" TextMode="Password" ></asp:TextBox>
+                    <asp:TextBox CssClass="ac" ID="txtMatkhau" runat="server" TextMode="Password" Width="245px" ></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*"
                         SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtMatkhau"></asp:RequiredFieldValidator>
                 </div>
             </div>
-            <div class="form-field">
+            <div class="formfield">
                 <div class="left">&nbsp;</div>
-                <div class="button">
-                    <asp:LinkButton ID="lbtDangnhap" runat="server" OnClick="lbtDangnhap_Click">Đăng nhập</asp:LinkButton>
+                <div >
+                    <asp:LinkButton CssClass="button" ID="lbtDangnhap" runat="server" OnClick="lbtDangnhap_Click" BackColor="#33CCCC" ForeColor="Black">Đăng nhập</asp:LinkButton>
+                   
                 </div>
-            </div>           
+            </div> 
+            </div>
+             
         </form>
+       </div>
+        
 
-        </div>
     
 </body>
 </html>

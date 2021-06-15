@@ -14,7 +14,11 @@ namespace webStudio
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            int status = Convert.ToInt32(Session["Login"].ToString());
+            if(status != 1)
+            {
+                Response.Redirect("Login.aspx");
+            }
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)

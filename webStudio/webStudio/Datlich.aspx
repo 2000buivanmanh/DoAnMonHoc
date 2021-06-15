@@ -5,56 +5,96 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="css/StyleDatLich.css"
+    <link rel="stylesheet" href="css/StyleDatLich.css" />
 </head>
     <style type="text/css">
-        #lblSdt{
-            margin-left:33px;
+        
+        h1{
+            color:brown;
+            padding-left:170px;
         }
-        #lblDiaDiem{
-            margin-left:3px;
-        }
-        #lblGC{
-            margin-left:11px;
+        .auto-style1 {
+            
+            width: 338px;
         }
     </style>
 
 <body>
     <form id="form1" runat="server">
-        <div class="khung" style="left:75px; top: 20px;" > 
+        <div class="khung"> 
             <h1>Thông tin đặt lịch</h1>
-            <div class="anh">
-            <asp:Image runat="server"  ID="imgDV" />
-        </div>
-        <div>
-            <asp:Label runat="server" ID="lblmadv" />
-        </div>
-        <div><asp:Label runat="server" ID="lbltenDV" /></div>
-        <div><asp:Label runat="server" ID="lblgia" /></div>
-        <div>
-            <asp:Label ID="lblSdt" runat="server" Text="SDT:" />
-            <asp:TextBox runat="server" ID="textbox1" CssClass="textbox"/>
-        </div>
-        <div>
-            <asp:Label runat="server" Text="Thời gian:" />
-            <asp:TextBox runat="server" ID="textbox2" CssClass="textbox"/>
-        </div>
-            <div>
-            <asp:Label runat="server" Text="Ngày làm:" />
-            <asp:TextBox runat="server" ID="textbox5" CssClass="textbox"/>
-        </div>
-        <div>
-            <asp:Label ID="lblDiaDiem" runat="server" Text="Địa điểm:" />
-            <asp:TextBox runat="server" ID="textbox3" CssClass="textbox"/>
-        </div>
-        <div>
-            <asp:Label ID="lblGC" runat="server" Text="Ghi chú:" />
-            <asp:TextBox runat="server" ID="textbox4" CssClass="textbox" Height="62px"/>
-        </div>
-        <div>
-            <asp:Button runat="server" CssClass="btn" ID="btnadd" Text="Đặt Lịch" OnClick="btnadd_Click" />
-        </div>
-        
+            <table>
+                <tr>
+                    <td>
+                        <div class="anh">
+                            <asp:Image runat="server"  ID="imgDV" Height="400px" Width="300px" />
+                        </div>
+                    </td>
+                    <td class="noidung">
+                        <div class="lb">
+                            <asp:Label runat="server" ID="lblmadv" />
+                        </div>
+                        <div class="lb"><asp:Label runat="server" ID="lbltenDV" /></div>
+                        <div class="lb"><asp:Label runat="server" ID="lblgia" /></div>
+                        
+                        <table class="auto-style1">
+                            <tr>
+                                <td class="ten">
+                                                              
+                            <asp:Label ID="lblSdt" runat="server" Text="SDT:" />                            
+                       
+                                </td>
+                                <td>
+                                    <asp:TextBox runat="server" ID="textbox1" CssClass="textbox"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ten">
+                                    
+                            <asp:Label runat="server" Text="Thời gian:" />
+                            
+                       
+                                </td>
+                                <td>
+                                    <asp:TextBox runat="server" ID="textbox2" CssClass="textbox"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ten">
+                                    
+                            <asp:Label runat="server" Text="Ngày làm:" />
+                           
+                        
+                                </td>
+                                <td>
+                                     <asp:TextBox runat="server" ID="textbox5" CssClass="textbox"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ten">
+                                   
+                            <asp:Label ID="lblDiaDiem" runat="server" Text="Địa điểm:" />
+                           
+                       
+                                </td>
+                                <td>
+                                     <asp:TextBox runat="server" ID="textbox3" CssClass="textbox"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ten">
+                            <asp:Label ID="lblGC" runat="server" Text="Ghi chú:" />
+                            
+                        </td>
+                                <td><asp:TextBox runat="server" ID="textbox4" CssClass="textbox" Height="62px"/></td>
+                            </tr>
+                        </table>                  
+                        <div>
+                            <asp:Button runat="server" CssClass="btn" ID="btnadd" Text="Đặt Lịch" OnClick="btnadd_Click" />
+                        </div>
+                    </td>
+                </tr>
+            </table>       
         </div>
         
     </form>

@@ -5,8 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>home</title>
-	<link rel="stylesheet" href="css/StyleHome.css">
-	<link rel="stylesheet" href="css/StyleHotline.css">
+	<link rel="stylesheet" href="css/StyleHome.css" />
+	<link rel="stylesheet" href="css/StyleHotline.css" />
+	<link rel="stylesheet" href="css/slide.css" />
     <style type="text/css">
         .auto-style1 {
             width: 382px;
@@ -48,7 +49,7 @@
             <div class="container">
 				<header>
 					<div class="innerheader container">
-						<a href="#"><img src="image/logo.png"></a>
+						<a href="#"><img src="image/logo.png" /></a>
 						<nav>
 							<ul id="mainmenu">							
 							<li><a href="home.aspx">home</a></li>
@@ -57,21 +58,31 @@
 							<li><a href="Photo.aspx">Photo</a></li>
 							<li><a href="Combo.aspx">Combo</a></li>
 							<li><a href="Dresses.aspx">Dresses</a></li><!-- váy -->
-							<li><a href="Login.aspx">Login</a></li>
+							<li><a href="Login.aspx">Login</a></li>							
+							<div>
+								<asp:Literal ID="ltrTenDN" runat="server"></asp:Literal>
+								<asp:LinkButton ID="lbtDangXuat" runat="server" OnClick="lbtDangXuat_Click" Text="Đăng xuất" OnUnload="Page_Load"></asp:LinkButton>
+							</div>
+							
 						</ul>
+							
 						</nav>
 					</div>
 				</header>
 				</div>
-		<div  id="slice">			
-					<div class="left" style="left: 75px; top: 120px">
-						<h2><i>Wedding</i> </h2>
-						<h1>Studio</h1>
-						
-						
-					</div>
-				</div>
-		
+		<div class="slide">
+		<div class="dieuhuong">
+			<i class="fa fa-chevron-circle-left" onclick="Back();"></i>
+			<i class="fa fa-chevron-circle-right" onclick="Next();"></i>
+		</div>
+		<div class="chuyen-slide">			
+			<img class="qq" src="image/biahome.jpg" /> // 1000
+			<img class="qq" src="image/slice.jpg" /> // 2000
+			<img class="qq" src="image/photo/d4.jpg" /> // 0
+			<img class="qq" src="image/vaycuoi4.jpg" /> // 3000
+			<img class="qq" src="image/vaycuoi5.jpg" /> // 4000
+		</div>
+	</div>
 		<div class="container">
 			
 		<div class="banner">
@@ -228,6 +239,7 @@
                     });
                 });
             </script>
+		<script type="text/javascript" src="scrip/slide.js"></script>
     </form>
 
 </body>

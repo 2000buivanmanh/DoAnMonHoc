@@ -85,6 +85,12 @@ innerheader img:hover {
     
 }
 
+.dangxuat{
+    float:right;
+    margin-right: 10px;
+    margin-top: 20px;
+    position:relative;
+}
 
     #slice .left {
        z-index:30;
@@ -148,7 +154,7 @@ innerheader img:hover {
 .bannerRight {
     margin-bottom: 20px;
     width: 500px;
-    height: 680px;
+    height: 660px;
     float: left;
     background-image: url('../image/right.jpg');
     background-size: cover;
@@ -176,7 +182,7 @@ innerheader img:hover {
     right: 270px;
     bottom: 75px;
     font-size: 60px;
-    color: #464444;
+    color: white;
 }
 
 .view2 {
@@ -332,5 +338,5 @@ h2{
     margin-top: 45px;
 }
 .footer{
-   padding-top: 100px;
+   margin-top: 100px;
 }

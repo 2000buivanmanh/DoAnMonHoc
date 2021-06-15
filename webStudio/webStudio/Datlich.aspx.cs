@@ -16,6 +16,11 @@ namespace webStudio
         String HinhAnh = "";
         protected void Page_Load(object sender, EventArgs e)
         {
+            int status = Convert.ToInt32(Session["Login"].ToString());
+            if(status == 0)
+            {
+                Response.Redirect("registration.aspx");
+            }
             id = Session["MaDV"].ToString();
             name = Session["TenDv"].ToString();
              gia = Session["GiaDV"].ToString();
@@ -24,7 +29,7 @@ namespace webStudio
             lbltenDV.Text = name;
             lblgia.Text = gia;
             imgDV.ImageUrl = HinhAnh;
-
+            
             
         }
 
@@ -37,7 +42,7 @@ namespace webStudio
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
-            
+            Response.Redirect("home.aspx");
         }
     }
 }

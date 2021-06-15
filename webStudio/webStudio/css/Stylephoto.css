@@ -1,0 +1,112 @@
+﻿body {  
+    background-color: #0B0719;
+    color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #696969;
+}
+
+    a:hover, a:hover p {
+        color: #adad90;
+    }
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+header {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 15px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.sticky {
+    background-color: #fff;
+    opacity: 0.9;
+    padding: 2px 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+    .sticky #mainmenu a {
+        color: #000;
+    }
+/*menu*/
+
+.innerheader {
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#mainmenu {
+    display: flex;
+}
+
+    ul#mainmenu a {
+        display: block;
+        color: #fff;
+        padding: 10px 20px;
+        text-transform: uppercase;
+    }
+
+.innerheader img {
+    width: 100px;
+    height: 60px;
+}
+
+innerheader img:hover {
+    opacity: 0;
+}
+
+.slide {
+    width: 300px;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.chuyen-slide {
+    width: 9999px;
+    transition: all 1.5s;
+}
+
+img{
+    width: 300px;
+    height: 400px;
+    float: left;
+}
+
+.dieuhuong {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    top: 38%;
+    padding-left: 20px;
+}
+
+    .dieuhuong i:last-child {
+        position: relative;
+        left: 660px;
+    }
