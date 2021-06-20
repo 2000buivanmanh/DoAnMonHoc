@@ -30,10 +30,24 @@
 						</ul>
 						</nav>
 					</div>
-				</header>
-			
-		  
+				</header>		  
 				</div>
+		<div class="cach">
+			
+		</div>
+		<div class="slide">
+		<div class="dieuhuong">
+			<i class="fa fa-chevron-circle-left" onclick="Back();"></i>
+			<i class="fa fa-chevron-circle-right" onclick="Next();"></i>
+		</div>
+		<div class="chuyen-slide">
+						<img class="abcd" src="image/em.jpg" /> // 1000
+			            <img class="abcd" src="image/catinh.jpg" /> // 2000
+			            <img class="abcd" src="image/hoanghau/d4.jpg" /> // 0
+			            <img class="abcd" src="image/diudang.jpg" /> // 3000
+			            <img class="abcd" src="image/nhenhang.jpg" /> // 4000
+		</div>
+	</div>
 		<div class="slide">
 		<div class="dieuhuong">
 			<i class="fa fa-chevron-circle-left" onclick="Back();"></i>

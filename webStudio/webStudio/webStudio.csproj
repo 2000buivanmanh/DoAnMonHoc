@@ -70,6 +70,7 @@
     <Content Include="Combo.aspx" />
     <Content Include="css\slide.css" />
     <Content Include="css\StyleBridal.css" />
+    <Content Include="css\StyleCombo.css" />
     <Content Include="css\StyleDresses.css" />
     <Content Include="css\StyleDatLich.css" />
     <Content Include="css\StyleHome.css" />
